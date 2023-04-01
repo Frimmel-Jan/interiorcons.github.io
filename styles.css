@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    background-color: #181719;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 2rem;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: 5rem;
+
+  }
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .heading {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    
+  }
+
+  .left {
+    margin-left: 4rem;
+  }
+
+  .info-top {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400 ;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    max-width: 12em;
+
+  }
+
+  .button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+     color: #FFFFFF;
+     text-decoration: none;
+  }
+
+  .right-wrapper {
+    position: relative;
+  }
+
+  .right {
+    background-image: url(photo1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+    
+  }
+
+  .card-wrapper {
+    position: absolute;
+    bottom: -100px;
+    right: 160px;
+    background-color: #181719;
+    color: white;    
+    
+  }
+
+  .card {
+    margin: 1rem;
+    width: 22rem;
+  }
+
+  .icon {
+    border-radius: 50%;
+    max-width: 48px;
+    float: left;
+    margin-right: 1rem;
+  }
+
+  .name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+
+  .job {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+
+  }
+
+  .info {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+  }
+
+
+  @media only screen and (min-width: 880px) and (max-width: 1200px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .left {
+      flex-basis: 100%;
+    }
+    .right-wrapper {
+      position: relative;
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .right {
+      position: absolute;
+      margin-top: 5rem;
+    }
+  }
+  
+  
